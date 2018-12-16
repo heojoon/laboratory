@@ -49,5 +49,3 @@ brew install terraform
 
 
 
-
-- Ref: http://knot.tistory.com/102
