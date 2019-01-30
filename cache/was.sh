@@ -11,5 +11,3 @@ docker run -d \
 	-v ${PWD}/tomcat/logs:/usr/local/tomcat/logs \
 	-v ${PWD}/tomcat/webapps/toywas:/usr/local/tomcat/webapps/toywas \
 	tomcat
-
-exit
