@@ -5,6 +5,7 @@
 # ------
 # You must run current directory.
 
+TAG=0.1
 
 # If Windows NT than change initial path.
 if [ Z"$(uname -a | grep NT)" != Z ];then
@@ -13,12 +14,13 @@ else
   	PWD=$(pwd)
 fi
 
-# nginx startup
+docker pull wnameless/oracle-xe-11g
+docker tag wnameless/oracle-xe-11g oracle:0.1
+
+
+# oracle startup
 docker run -d \
-	--name nginx \
-	-p 80:80 \
-	-v ${PWD}/nginx/conf/nginx.conf:/etc/nginx.conf \
-	-v ${PWD}/nginx/conf/conf.d:/etc/nginx/conf.d \
-	-v ${PWD}/nginx/log:/var/log/nginx \
-	-v ${PWD}/nginx/html:/usr/share/nginx/html \
-	nginx
+	--name oracle \
+	-p 1521:1521 \
+	-p 8090:8080 \
+	oracle:${TAG}

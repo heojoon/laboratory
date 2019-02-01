@@ -1,7 +1,16 @@
 #!/bin/bash
 
-# shutdown tomcat
-docker rm -f was
+#
+# Description
+# ------
+# You must run current directory.
+
+# If Windows NT than change initial path.
+if [ Z"$(uname -a | grep NT)" != Z ];then
+  	PWD="$(pwd | sed s/'\/d\/'/'D:\\'/g)"
+else
+  	PWD=$(pwd)
+fi
 
 # startup tomcat
 docker run -d \
@@ -11,5 +20,3 @@ docker run -d \
 	-v ${PWD}/tomcat/logs:/usr/local/tomcat/logs \
 	-v ${PWD}/tomcat/webapps/toywas:/usr/local/tomcat/webapps/toywas \
 	tomcat
-
-exit
