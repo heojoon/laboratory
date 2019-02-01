@@ -32,35 +32,4 @@
 2019/01/28 22:54:09 [error] 6#6: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
 2019/01/28 22:54:18 [error] 6#6: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
 2019/01/28 22:54:35 [error] 6#6: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2019/01/30 15:09:30 [error] 7#7: *1 open() "/etc/nginx/html/index.jsp" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index.jsp HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:09:32 [error] 7#7: *1 open() "/etc/nginx/html/index.jsp" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index.jsp HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:11:45 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:11 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:20 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:21 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:21 [error] 7#7: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/index2.html"
-2019/01/30 15:12:21 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:21 [error] 7#7: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/index2.html"
-2019/01/30 15:12:21 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:21 [error] 7#7: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/index2.html"
-2019/01/30 15:12:34 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:34 [error] 7#7: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/index2.html"
-2019/01/30 15:12:34 [error] 7#7: *2 open() "/usr/share/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /index2.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 15:12:35 [error] 7#7: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/index2.html"
-2019/01/30 15:14:18 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:18:08 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:18:23 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:21:21 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:21:33 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:22:36 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:23:11 [error] 6#6: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: toywas, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
-2019/01/30 15:24:46 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:25:31 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:26:24 [emerg] 1#1: host not found in upstream "${WAS_IP}:8080" in /etc/nginx/nginx.conf:30
-2019/01/30 15:30:00 [emerg] 1#1: unknown directive "proxy-pass" in /etc/nginx/nginx.conf:33
-2019/01/30 15:34:41 [emerg] 1#1: unknown directive "proxy-pass" in /etc/nginx/nginx.conf:36
-2019/01/30 16:15:30 [error] 8#8: *1 open() "/etc/nginx/html/test.css" failed (2: No such file or directory), client: 172.17.0.1, server: hjoontoy.net, request: "GET /test.css HTTP/1.1", host: "127.0.0.1"
-2019/01/30 16:16:49 [error] 8#8: *4 open() "/usr/share/nginx/html/test.html" failed (2: No such file or directory), client: 172.17.0.1, server: hjoontoy.net, request: "GET /test.html HTTP/1.1", host: "127.0.0.1"
-2019/01/30 16:16:57 [error] 8#8: *4 open() "/etc/nginx/html/test.css" failed (2: No such file or directory), client: 172.17.0.1, server: hjoontoy.net, request: "GET /test.css HTTP/1.1", host: "127.0.0.1"
-2019/01/30 16:16:59 [error] 8#8: *4 open() "/etc/nginx/html/test.css" failed (2: No such file or directory), client: 172.17.0.1, server: hjoontoy.net, request: "GET /test.css HTTP/1.1", host: "127.0.0.1"
-2019/01/30 16:17:08 [error] 8#8: *4 open() "/etc/nginx/html/test.css" failed (2: No such file or directory), client: 172.17.0.1, server: hjoontoy.net, request: "GET /test.css HTTP/1.1", host: "127.0.0.1"
+
