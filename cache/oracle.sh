@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#
+# ------
 # Description
 # ------
 # You must run current directory.
@@ -14,9 +14,9 @@ else
   	PWD=$(pwd)
 fi
 
+# oracle-xe-11g Image download to local
 docker pull wnameless/oracle-xe-11g
 docker tag wnameless/oracle-xe-11g oracle:0.1
-
 
 # oracle startup
 docker run -d \
