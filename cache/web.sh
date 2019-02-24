@@ -9,6 +9,7 @@
 # And Setting the varible path called LOG_PATH.
 #
 
+VER=1.14.2
 TAG=dev0.1
 LOG_PATH="../../logs/laboratory/cache/nginx"
 
@@ -21,7 +22,7 @@ else
 fi
 
 # oracle-xe-11g Image download to local
-docker pull nginx
+docker pull nginx:${VER}
 docker tag nginx nginx:${TAG}
 
 # nginx startup

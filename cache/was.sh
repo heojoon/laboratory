@@ -9,6 +9,7 @@
 # And Setting the varible path called LOG_PATH.
 #
 
+VER=8.5.38-jre11
 TAG=dev0.1
 LOG_PATH1="../../logs/laboratory/cache/tomcat-1"
 LOG_PATH2="../../logs/laboratory/cache/tomcat-2"
@@ -21,7 +22,7 @@ else
 fi
 
 # oracle-xe-11g Image download to local
-docker pull tomcat
+docker pull tomcat:${VER}
 docker tag tomcat tomcat:${TAG} 
 
 # startup tomcat
