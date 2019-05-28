@@ -53,6 +53,7 @@ else
 	;;
 	status) echo "Shutdown process... : ${Infra}"
 	   fn_controll describe-instance-status ap-northeast-1
+	   fn_controll describe-addresses ap-northeast-1
 	;;
 	*) echo "[Error] Wrong argument !!"
 	   exit
