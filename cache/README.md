@@ -27,3 +27,11 @@ Because the docker is a skill sufficient to meet these requirements, proceed to 
 2019-03-12 테스트 시나리오가 필요하다. 그렇기 위해서는 DB에 데이터를 넣어야 하는데 사용 할만한 소스가.. java로 되어있어야 하는데..
 오픈소스를 좀 뒤저봐야겠음
 
+## Memo
+redis HandsOn 하기 좋은 사이트를 찾음 
+https://riptutorial.com/ko/redis/topic/1724/redis-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
+
+## redis 
+~~~
+~~~
+ 
