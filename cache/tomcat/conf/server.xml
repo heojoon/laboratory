@@ -75,6 +75,7 @@
           maxActive="20"
           maxIdle="10"
           maxWait="10000"/>
+ -->
 
      <Resource
           name="jdbc/mariaDB"
@@ -82,8 +83,8 @@
           type="javax.sql.DataSource"
           driverClassName="org.mariadb.jdbc.Driver"
           url="jdbc:mariadb://localhost:3306/DBNAME?autoReconnect=true"
-          username="USER"
-          password="PASSWORD"
+          username="hjoon"
+          password="hjoonpassword"
           maxActive="100"
           maxIdle="30"
           maxWait="10000"
@@ -93,6 +94,7 @@
           removeAbandonedTimeout="60"
           logAbandoned="true"/>
 
+<!--
      <Resource
           name="jdbc/mysqlDB"
           auth="Container"
@@ -199,7 +201,7 @@
     <!-- You should set jvmRoute to support load-balancing via AJP ie :
     <Engine name="Catalina" defaultHost="localhost" jvmRoute="jvm1">
     -->
-    <Engine name="Catalina" defaultHost="toywas">
+    <Engine name="toywas1" defaultHost="toywas#1">
 
       <!--For clustering, please take a look at documentation at:
           /docs/cluster-howto.html  (simple how to)
@@ -215,17 +217,14 @@
              resources under the key "UserDatabase".  Any edits
              that are performed against this UserDatabase are immediately
              available for use by the Realm.  -->
-        <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
-               resourceName="UserDatabase"/>
+        <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
       </Realm>
 
      <!--
-      <Host name="localhost"  appBase="webapps"
-            unpackWARs="true" autoDeploy="true">
+      <Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">
      -->
      
-     <Host name="toywas"  appBase="webapps" 
-          unpackWARs="false" autoDeploy="true">
+     <Host name="toywas1.hj.net"  appBase="webapps" unpackWARs="true" autoDeploy="true">
 
           <Context className="org.apache.catalina.core.StandardContext"
                  cachingAllowed="false"
@@ -246,16 +245,16 @@
                     name="jdbc/oracleVIP"
                     global="jdbc/oracleDB"
                     type="javax.sql.DataSource" />
+               -->
                <ResourceLink
                     name="jdbc/mariaDB"
                     global="jdbc/mariaDB"
                     type="javax.sql.DataSource" />
-               -->
           </Context>
-     
+
         <!-- Access log processes all example. Documentation at: /docs/config/valve.html Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="log"
-               prefix="access_was" suffix=".log"
+               prefix="access_was1" suffix=".log"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
      </Host>
     </Engine>
