@@ -23,6 +23,11 @@ pathApacheInstalled="/app/web/apache"
 
 # Path Check
 fn_pathCheck() {
+    if [ -e "${pathInstall}/apache-tomcat-${Tomcat_Version}" ]
+        echo "[Error] Already Installed in ${pathInstall}/apache-tomcat-${Tomcat_Version}"
+        exit 0
+    fi
+
     if [ ! -e ${pathApacheInstalled} ] ;then
         echo "[Error] Directory : ${pathApacheInstalled} is not exist !!"
         echo -n "Do you want Create Directory ? (y|n) : " ; read answer
