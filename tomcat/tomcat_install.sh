@@ -55,6 +55,7 @@ fn_insTomcat() {
     curl -O ${srcDownUrl}
     tar zxvf ${downFile} -C ${pathInstall}
     chown -R ${Owner}:${Owner} ${pathInstall}
+    rm -f ${downFile}
 }
 
 # Install tomcat-connector
@@ -68,6 +69,16 @@ fn_insTomcatCon() {
     ./configure --with-apxs=${pathApacheInstalled}/bin/apxs  && make && make install
 }
 
+fn_removeDownfile() {
+    cd ${pathInstall}
+    rm ${downFile}
+
+    cd ${pathDownload}
+    rm tomcat-connectors-1.2.48-src.tar.gz
+    rm tomcat-connectors-1.2.48
+}
+
 fn_pathCheck
 fn_insTomcat
 fn_insTomcatCon
+fn_removeDownfile
