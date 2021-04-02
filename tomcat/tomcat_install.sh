@@ -23,7 +23,7 @@ pathApacheInstalled="/app/web/apache"
 
 # Path Check
 fn_pathCheck() {
-    if [ -e "${pathInstall}/apache-tomcat-${Tomcat_Version}" ]
+    if [ -e "${pathInstall}/apache-tomcat-${Tomcat_Version}" ];then
         echo "[Error] Already Installed in ${pathInstall}/apache-tomcat-${Tomcat_Version}"
         exit 0
     fi
