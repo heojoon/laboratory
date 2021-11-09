@@ -168,7 +168,7 @@
    not connected> quit
    ~~~
 
-   ::unlock: 인증 패스워드 : nxtwms123!
+   
 
 
 
