@@ -61,18 +61,18 @@
 
    ~~~bash
    bind 0.0.0.0
-protected-mode yes
-port 6379
-daemonize yes
-supervised auto
-pidfile "/var/run/redis_6379.pid"
-dir "/app/sol/redis/data"
-logfile "/app/sol/redis/log/redis_6379.log"
-requirepass "PASSWORD"
-appendonly yes
-appendfsync everysec
-save 300 100
-stop-writes-on-bgsave-error no
+   protected-mode yes
+   port 6379
+   daemonize yes
+   supervised auto
+   pidfile "/var/run/redis_6379.pid"
+   dir "/app/sol/redis/data"
+   logfile "/app/sol/redis/log/redis_6379.log"
+   requirepass "PASSWORD"
+   appendonly yes
+   appendfsync everysec
+   save 300 100
+   stop-writes-on-bgsave-error no
    ~~~
 
    > 디스크 백업 방식은 appendonly + RDB 방식 사용
