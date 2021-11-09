@@ -81,7 +81,7 @@
 
 5. 구동 스크립트 (/etc/init.d/redis) 
 
-   * USER="nxtwmsadm" 으로만 구동하도록 추가
+   * USER="일반유저" 으로만 구동하도록 추가
 
    ~~~bash
    #!/bin/sh
@@ -103,7 +103,7 @@
    
    PIDFILE=/var/run/redis_${REDISPORT}.pid
    CONF="/app/sol/redis/conf/redis.conf"
-   USER="nxtwmsadm"
+   USER="일반유저"
    
    case "$1" in
    start)
@@ -145,12 +145,12 @@
 
    ~~~bash
    # 구동
-   [nxtwmsadm@Dnxtwmswas bin]$ service redis start
+   $ service redis start
    Starting Redis server...
    
    # 프로세스 확인
-   [nxtwmsadm@Dnxtwmswas bin]$ ps -ef |grep redis | grep -v grep
-   nxtwmsa+ 16931 1 0 14:41 ? 00:00:00 /app/sol/redis/bin/redis-server 0.0.0.0:6379
+   $ ps -ef |grep redis | grep -v grep
+    16931 1 0 14:41 ? 00:00:00 /app/sol/redis/bin/redis-server 0.0.0.0:6379
    ~~~
 
    
@@ -161,8 +161,8 @@
 
    ~~~bash
    # redis 접속 및 종료
-   [nxtwmsadm@Dnxtwmswas bin]$ ./redis-cli
-   127.0.0.1:6379> auth nxtwms123!
+   $ ./redis-cli
+   127.0.0.1:6379> auth PASSWORD
    OK
    127.0.0.1:6379> shutdown
    not connected> quit
